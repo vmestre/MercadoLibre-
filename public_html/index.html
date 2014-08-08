@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title> MercadoLibre </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.3.min.js"></script>
+    <script src="js/newjavascript.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.3.min.css">
+</head>
+<body>
+    <div data-role="page" id="pagina1">
+
+        <div data-role="header">
+            Busqueda de productos
+        </div>       
+
+        <div class="ui-content">
+            <a id="recargarCategorias" href="">Inicio</a><br>&nbsp&nbsp<a id="categoriasSeleccionadas" href=""></a>
+            
+            <label>Seleccione categoria</label> 
+            <div id="categorias">
+                <ul id="listaCategorias"></ul>
+                <a href='' id="categ" ></a>
+
+            </div>
+           
+            <label for="palabra" >Ingrese producto</label>
+            <input type="text" id="palabra">
+            <input type="button" class="ui-btn" id="botonBuscar" value="Buscar"> 
+            <a href="" id="menorPrecio"> Ordenar por menor precio </a>&nbsp&nbsp
+            <a href="" id="mayorPrecio"> Ordenar por mayor precio </a>
+            
+            
+            <div id="resultados">
+                <ul id="listaRes"></ul>
+            </div>
+           
+            <a href="" id="verMas"> Siguiente </a>
+        </div>     
+
+        <div data-role="footer">
+        </div>  
+    </div>
+
+    <div data-role="page" id="pagina2">
+        <div data-role="header">
+            2
+        </div>    
+
+        <div class="ui-content">
+
+            <div id="resultadosProd">
+                <div class="ui-grid-b ui-responsive">
+                    <div id="foto" class="ui-block-a"></div>
+                    <div id="titulo" class="ui-block-b"></div>
+
+                    <div id="precio" class="ui-block-c"></div>
+                    <div id="descripcion" class="ui-block-d"></div>
+
+                </div>
+            </div>
+            <br>
+            <a href="#pagina1" >Volver</a>  
+        </div>     
+        <div data-role="footer">
+
+        </div>  
+    </div>  
+</body>
+</html>
